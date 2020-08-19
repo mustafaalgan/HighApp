@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             NavigationPage.HasNavigationBar = "True"
+             BackgroundColor="#c1fffe"
+             mc:Ignorable="d"
+             x:Class="HighApp.Yan_Sayfalar.Vucut_Kitle_İndeks">
+
+    <StackLayout>
+
+        <Entry 
+            x:Name="boy"
+            Placeholder="0,00"
+            MaxLength="3"
+            Keyboard="Numeric"
+            HorizontalOptions="Center"
+            TextChanged="Boy_TextChanged"/>
+
+        <Label x:Name="boy_text"        HorizontalOptions="Start" FontSize="Large" Text="Boy" />
+        <Label x:Name="cinsiyet_text"   HorizontalOptions="Start" FontSize="Large" Text="Cinsiyet" />
+        <Label x:Name="kilo_text"       HorizontalOptions="Start" FontSize="Large" Text="Kilo" />
+        <Label x:Name="ideal_kilo_text" HorizontalOptions="Start" FontSize="Large" Text="İdeal Kilonuz" />
+        <Label x:Name="durum"           HorizontalOptions="Start" FontSize="Large" Text="Durumunuz"/>
+        <Label x:Name="ideal_kilo"      HorizontalOptions="Center" FontSize="Large" Text="--"  TextColor="Black" BackgroundColor="#79EC23" />
+        <Label x:Name="durum_text"      HorizontalOptions="Center" FontSize="Large" Text="Vücut Kitle İndexine Hoşgeldiniz" TextColor="White" BackgroundColor="#26BC2C"/>
+        <Label x:Name="kg_yaz"          HorizontalOptions="Center" FontSize="Large" Text="50" />
+        <Image x:Name="png" Source="kilo_tarti.gif" IsAnimationPlaying="true"/>
+
+        <!--<input:AdvancedSlider x:Name="kilo" MaxValue="5000" MinValue="50" StepValue="50" ValuePrefix="Price:" ValueSuffix="€" Title="Choose Budget:" DisplayMinMaxValue="False"/>-->
+
+
+        <input:RadioButtonGroupView  x:Name="cinsiyet" SelectedItemChanged="Cinsiyet_SelectedItemChanged"  HorizontalOptions="Center">
+            <input:RadioButton x:Name="c_kadin" Text="Kadın" TextColor="Red"  Color="Red"   IsChecked="True"/>
+            <input:RadioButton x:Name="c_erkek" Text="Erkek" TextColor="Blue" Color="Blue"                  />
+        </input:RadioButtonGroupView>
+        
+    </StackLayout>
+</ContentPage>

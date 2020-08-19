@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3FD2C625-2999-4329-9CBA-1AD321B8EEE6}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>HighApp.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>HighApp.iOS</AssemblyName>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <ProvisioningType>automatic</ProvisioningType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>None</MtouchLink>
+    <MtouchInterpreter>-all</MtouchInterpreter>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>false</BuildIpa>
+    <IpaMetadata>Info.plist</IpaMetadata>
+    <IpaIncludeArtwork>false</IpaIncludeArtwork>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <AndroidAsset Include="Resources\LuckiestGuy.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.495" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\HighApp\HighApp.csproj">
+      <Project>{C6E61C32-3681-4F12-9215-013D02210CD9}</Project>
+      <Name>HighApp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\eczane.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\eczane_gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\eglence.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\evim_logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\exiticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\game_console.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\geribildirim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gezi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gol.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\haber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\highapp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ikincibahar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\instagram_anim.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\kavurma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\kavurmaciosman_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\kaydir.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\kibyra1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\kilo_tarti.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\kitap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\komagene.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\konum_animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\kosk_restaurant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\kurumsal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mavi_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mavi_bg_page.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mavi_setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\memis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\namazvakit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\neon_frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\optik.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\otobus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\saglik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\saglik_sel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\settings_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sp_golhisar1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sp_golhisar2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sp_hastane1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sp_hastane2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sp_kibyra_genis_aci.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sp_kibyra_hiyoroglifler.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sp_kibyra_medusa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sp_kibyra_odeon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sp_kibyra5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\surucu_kursu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tesekkurler.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\turuncu_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\turuncu_bg_page.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\vitaminbar_logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\viyana_logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\web_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\yayla.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\yayla_logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\yemek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\acaba_neden_yav.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ardic_logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\baskan_face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\baskan_insta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\baskan_makam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\baskan_wp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bigbaba_logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\burdursis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\buruks_logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\caddekafe_logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cenaze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\corek_otu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\dark_theme.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\duyuru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\otobus_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\saglik_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\vefat_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\yemek_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\duyuru_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\egitim_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\eglence_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gezgin_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\haber_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\hakkinda_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\kurumsal_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\namazvakitleri_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Resources\LICENSE.txt" />
+  </ItemGroup>
+</Project>

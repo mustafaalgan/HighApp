@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             NavigationPage.HasNavigationBar = "True"
+             mc:Ignorable="d"
+             x:Class="HighApp.Yan_Sayfalar.Hastane">
+
+
+    <ScrollView>
+        <StackLayout>
+
+            <Image
+                Source="sp_hastane2.jpg"
+                Aspect="AspectFill"
+                HeightRequest="300"
+                WidthRequest="180"/>
+
+            <Image
+                Source="kaydir.gif"
+                IsAnimationPlaying="true"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                HeightRequest="20"
+                WidthRequest="20"/>
+
+            <Label
+                Text="Gölhisar Devlet Hastanesi"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center"
+                FontFamily="{StaticResource NormalFont}"
+                TextColor="#004570" 
+                FontSize="Medium"
+                Padding="0,0,0,20"/>
+
+            <Label
+                Text="Gölhisar Devlet Hastanesi Fatih Mah. Cumhuriyet caddesinde bulunan Gölhisar Devlet Hastanesi, yatak kapasitesini 75 'e çıkartmıştır.  Genel cerrahi, Ortopedi, Anesteziyoloji,  Göz Hastalıkları, KBB Hastalıkları, Enfeksiyon Hastalıkları, Nöroloji, Çocuk Hastalıkları, İç Hastalıkları, Fizik Tedavi Rehabilitasyon, Diş polikinliği servis ve polikinlik hizmetlerinin yanında;  Yoğun bakım ünitesi, modern ameliyathanesi ve diyaliz ünitesi hizmeti de vermektedir.  UNICEF ve Bakanlığımız işbirliğinde  Bebek ölümlerini azaltmak için gerekli eğitim ve çalışmalar yapılmaktadır. Sağlık Bakanlığı Ana Çocuk Sağlığı Planlanması Genel Müdürlüğünce,  Burdur, 'Altın Bebek Dostu İl ' ünvanı ile ödüllendirilmiştir. 'Mutlu gebe ve sağlıklı bebek' Sloganıyla başlatılan gebe okuluna da  başvurabilirsiniz."
+                FontSize="Body"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+
+            <Image
+                Source="sp_hastane1.jpg"
+                Aspect="AspectFill"
+                HeightRequest="300"
+                WidthRequest="180"/>
+        </StackLayout>
+    </ScrollView>
+       
+</ContentPage>

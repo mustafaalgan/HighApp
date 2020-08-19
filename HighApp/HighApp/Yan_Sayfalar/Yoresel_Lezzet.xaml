@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             NavigationPage.HasNavigationBar = "True"
+             BackgroundImageSource="texture.png"
+             mc:Ignorable="d"
+             x:Class="HighApp.Yoresel_Lezzet">
+
+    <ScrollView>
+        <StackLayout>
+            <Label
+                Text="Yöresel Lezzetler"
+                FontFamily="{StaticResource NormalFont}"
+                TextColor="#004570"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center"
+                FontSize="Medium"
+                Padding="0,20,0,20"/>
+            <Image
+                Source="burdursis.jpg"
+                Aspect="AspectFill"
+                HeightRequest="300"
+                WidthRequest="180"/>
+
+            <Label
+                Text="Burdur Şiş"
+                FontFamily="{StaticResource NormalFont}"
+                TextColor="#004570"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center"
+                FontSize="Medium"
+                Padding="0,0,0,20"/>
+
+            <Label  
+                Text="Coğrafi işaret tescilli yemeği; Burdur şiş. Kendi yaylalarında yayılan danaların kaburga kıymasından yapılır. Lezzetin yükünü baharatlara bırakmaz. Tuz ve etin sade lezzetine güvenir."
+                FontSize="Body"
+                Padding="5,0,5,0"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+            <Image
+                Source="kavurma.jpg"
+                Aspect="AspectFill"
+                HeightRequest="300"
+                WidthRequest="180"/>
+
+            <Label 
+                Text="Kavurma"
+                FontFamily="{StaticResource NormalFont}"
+                TextColor="#004570"
+                FontSize="Body"
+                Padding="5,0,5,0"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+            <Label 
+                Text="Gölhisar Kavurması; Yağsız dana eti işlenip yaprak şeklinde kesilir. Hayvanın iç yağı sac üzerinde yüksek ateşte eritilir. Eriyen yağa atılan etler 7 saniyede ağzı sulandıracak bir kıvam alır. Soğan, domates ve yanında koyun yoğurduyla enfes bir uyum yakalar…"
+                FontSize="Body"
+                Padding="5,0,5,0"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+
+            <Image
+                Source="corek_otu.jpg"
+                Aspect="AspectFill"
+                HeightRequest="300"
+                WidthRequest="180"/>
+            
+            <Label 
+                Text="Çörek Otu Kahvesi"
+                FontFamily="{StaticResource NormalFont}"
+                TextColor="#004570"
+                FontSize="Body"
+                Padding="5,0,5,0"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Ölümden başka her derde şifa olan çörek otu, ve onun kahvesi… Türk lokumu, hurma, susam veya ham haldeki çörekotu taneleriyle içime sunulur."
+                FontSize="Body"
+                Padding="5,0,5,0"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+            
+        </StackLayout>
+
+    </ScrollView>
+
+</ContentPage>

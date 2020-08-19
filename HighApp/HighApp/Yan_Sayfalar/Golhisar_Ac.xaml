@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             NavigationPage.HasNavigationBar = "True"
+             mc:Ignorable="d"
+             x:Class="HighApp.Golhisar_Ac">
+    <ScrollView>
+    <StackLayout>
+
+        <Image
+                Source="sp_golhisar1.jpg"
+                Aspect="AspectFill"
+                HeightRequest="300"
+                WidthRequest="180"/>
+
+        <Image
+                Source="kaydir.gif"
+                IsAnimationPlaying="true"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                HeightRequest="20"
+                WidthRequest="20"/>
+
+        <Label
+                Text="Gölhisar"
+               FontFamily="{StaticResource NormalFont}"
+               TextColor="#004570"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center"
+                FontSize="Medium"
+                Padding="0,0,0,20"/>
+
+
+                <Label
+                Text="GÖLHİSAR &#10; Akdeniz bölgesinin göller yöresine ve Burdur iline bağlı Gölhisar, 15 bin nüfusuyla Burdur İlinin 2. büyük ilçesidir. Antalya(135km), Fethiye(110km), Denizli(95km), Burdur (115km) illerinin ortasında yer alır. Tarihi dinleyip ona şahit olan Gölhisar, doğayla savaşmayan, kültürünü yaşatmaya çalışan medeniyetler coğrafyasıdır. İklimi cennetin gölgesidir Gölhisar'ın. Akdeniz iklimi ile Karasal iklimi arasında geçiş iklimi yaşar. Yaz sıcakları akdeniz iklimi kadar yüksek, Kış soğukları da karasal iklim kadar soğuk değildir. Kibyra antik kenti, Gölhisar ve Kocayayla Gölleri; Böğrüdelik, Kozpınar ve Armutlu yaylaları, Yapraklı barajı ile turizm için önemli olduğu kadar yaşayan halka da doğanın tüm güzelliklerini sunar. Yöreye has lezzetler vardır. Gölhisar Kavurması; Yağsız dana eti işlenip yaprak şeklinde kesilir. Hayvanın iç yağı sac üzerinde yüksek ateşte eritilir. Eriyen yağa atılan etler 7 saniyede ağzı sulandıracak bir kıvam alır. Soğan, domates ve yanında koyun yoğurduyla enfes bir uyum yakalar… Coğrafi işaret tescilli yemeği; Burdur şiş. Kendi yaylalarında yayılan danaların kaburga kıymasından yapılır. Lezzetin yükünü baharatlara bırakmaz. Tuz ve etin sade lezzetine güvenir. Ölümden başka her derde şifa olan çörek otu, ve onun kahvesi… Türk lokumu, hurma, susam veya ham haldeki çörekotu taneleriyle içime sunulur. Halkı Anadolu insanıdır. Doğrusuyla, yanlışıyla, naifliğiyle bizdendir işte. Çocuğun beşiğine nazarlıklar asar, Gebe kadın güzelleşirse erkek, çirkinleşirse kız çocuğu doğuracağına inanır, 'Kırkyalan Mıstafa, Dussuzların Meğmet' gibi lakapları vardır. Dam damlantısından garı dırıltısından durulmaz gibi kendine has mizahi söyleşileri vardır. Herhangi bir meyve toplayacağı zaman yüksek dallardaki meyve 'kurdun kuşun hakkı' diye bırakılır. Mahsülün bereketi için, ekimden önce namaz kılınır, tohum saçılırken şöyle denir. 'Kurdunan kuşunan, eşinen dostunan yemek nasip olsun. 'Çokeşme geleneği vardır, bayramları namazdan sonra herkes evinden en güzel yemeklerini getirir. Şenlik havası içinde yenilir. Bayramlaşılır sonra evlerine dağılır herkes. Gelin odasına girdiğinde kapının dışına bir mendil serilir. 3 defa bohça gibi dürülüp açılır. Manası; 'Sofran bir ömür burada açılsın burada kapansın' demektir . Gölhisar düğünlerinde gelinler  bir kavak ağacının etrafında dolaştırılır. Bunun bir sebebi, hikayesi vardır. Rüstem ağa köyün ağası, Fatmana ise onun tarlalarında çalışan bir ırgat bir de sevdiği var,  ismi Memiş. Rüstem ağa vurulmuş Fatmana'ya. Fatmana Memiş'i sever, ama garip Memiş, ağa'nın baskısına dayanamaz köyden kaçar. Rüstem ağa 'bu kızı alacağım der' üstelik bir de and içer 'şu kavağın etrafında da dolaştıracağım.' En sonunda zorla düğünleri başlar. Fatmana, Memiş'e olan sevdasından dayanamaz kıyar canına… Rüstem ağa dediğimi yapacağım deyip Fatmana'nın cesedini at üzerine bindirip gezdirir kavak ağacının etrafında. Çok sürmeden kendi de vicdan azabından ölür.. Bu olaydan sonra bu ağaca Gelin kavağı' derler. Sekiz dalından yedisi yaşam içindeyken, birisi bu büyük kederi taşıyamaz kurur ve hiç yaşam belirtisi vermez. Bu kuru dalı keser halk. Bu ağacın etrafında dolaştırılan Gelinler hem şahit olsun Fatmana'nın acısına, hem herkes sevdiğiyle olsun kurumasın dalları… 19 Mayıs'ta başlar Sevgi yolu yürüyüşleri. Akşamları en işlek cadde trafiğe kapanır. Yazın sıcağından, stresinden bunalan yüzlerce insan, eş, dost, çocuk takıp koluna yürüyüşe çıkar. Seyyar satıcılar olur caddenin kaldırımlarında. Tatlılar, kar şerbetleri, içecekler ikram edilir.Kısaca yaşatılmaya çalışır insanın insanla, tarihle, kültürüyle olan bağları. Bir başkadır Gölhisar.. Sizde Gölhisar ile tanışmak, bu sevgiye ortak olmak isterseniz hoş gelir sefalar getirirsiniz…"
+                FontSize="Body"
+                Padding="5,0,5,0"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+                <Image
+                Source="sp_golhisar2.jpg"
+                Aspect="AspectFill"
+                HeightRequest="300"
+                WidthRequest="180"/>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

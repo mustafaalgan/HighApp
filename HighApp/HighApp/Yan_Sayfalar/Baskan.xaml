@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             NavigationPage.HasNavigationBar = "True"
+             mc:Ignorable="d"
+             x:Class="HighApp.Yan_Sayfalar.Baskan">
+
+    <ScrollView>
+        <StackLayout>
+
+        <Image
+                Source="baskan_makam.jpg"
+                Aspect="AspectFill"
+                HeightRequest="300"
+                WidthRequest="180"/>
+
+        <StackLayout>
+
+            <Image
+                Source="kaydir.gif"
+                IsAnimationPlaying="true"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                HeightRequest="20"
+                WidthRequest="20"/>
+
+            <Label
+                Text="Başkanın Mesajı"
+                FontFamily="{StaticResource NormalFont}"
+                TextColor="#004570"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center"
+                FontSize="Medium"
+                Padding="0,0,0,20"/>
+
+        </StackLayout>
+
+        <RelativeLayout>
+            <Frame
+                x:Name="ardic_x"
+                BackgroundColor="Transparent"/>
+
+            <Image
+                Source="baskan_face.png"
+                RelativeLayout.YConstraint="{ConstraintExpression
+                Type=RelativeToView,
+                ElementName=ardic_x,
+                Property=Y,
+                Factor=0,
+                Constant=-15}"
+            
+                RelativeLayout.XConstraint="{ConstraintExpression
+                Type=RelativeToView,
+                ElementName=ardic_x,
+                Property=X,
+                Factor=1,
+                Constant=115}"
+            
+                RelativeLayout.WidthConstraint="{ConstraintExpression
+                Type=RelativeToParent,
+                Property=Width,
+                Factor=.0,
+                Constant=30}"
+            
+                RelativeLayout.HeightConstraint="{ConstraintExpression
+                Type=RelativeToParent,
+                Property=Height,
+                Factor=.0,
+                Constant=30}" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="Baskan_Face"
+                            NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+            <Image
+                Source="baskan_wp.png"
+                RelativeLayout.YConstraint="{ConstraintExpression
+                Type=RelativeToView,
+                ElementName=ardic_x,
+                Property=Y,
+                Factor=0,
+                Constant=-15}"
+                
+                RelativeLayout.XConstraint="{ConstraintExpression
+                Type=RelativeToView,
+                ElementName=ardic_x,
+                Property=X,
+                Factor=1,
+                Constant=175}"
+            
+                RelativeLayout.WidthConstraint="{ConstraintExpression
+                Type=RelativeToParent,
+                Property=Width,
+                Factor=.0,
+                Constant=30}"
+            
+                RelativeLayout.HeightConstraint="{ConstraintExpression
+                Type=RelativeToParent,
+                Property=Height,
+                Factor=.0,
+                Constant=30}" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="Baskan_WP"
+                            NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+            <Image
+                Source="baskan_insta.png"
+                RelativeLayout.YConstraint="{ConstraintExpression
+                Type=RelativeToView,
+                ElementName=ardic_x,
+                Property=Y,
+                Factor=0,
+                Constant=-15}"
+                
+                RelativeLayout.XConstraint="{ConstraintExpression
+                Type=RelativeToView,
+                ElementName=ardic_x,
+                Property=X,
+                Factor=1,
+                Constant=235}"
+            
+                RelativeLayout.WidthConstraint="{ConstraintExpression
+                Type=RelativeToParent,
+                Property=Width,
+                Factor=.0,
+                Constant=30}"
+            
+                RelativeLayout.HeightConstraint="{ConstraintExpression
+                Type=RelativeToParent,
+                Property=Height,
+                Factor=.0,
+                Constant=30}">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="Baskan_Instagram"
+                            NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+            </RelativeLayout>
+            <Label
+                Text="Başkanın Mesajı Değerli hemşehrilerim, sevgili arkadaşlar! Gölhisar 'ımız için hayırlı olmasını temenni ettiğimiz bir mobil uygulamanın faaliyete geçtiğini sizlerle paylaşmaktan mutluluk duyuyorum. Hayatımızın her alanında kullandığımız teknolojinin bir ürünü olan akıllı telefonlar, günlük hayatlarımızda birçok işimizi kolaylaştırır hale getirdi. Günümüzde artık teknolojiyi kullanarak birçok hizmete uzaktan erişim sağlıyoruz. Tam da bu bağlamda Gölhisar Belediyesinin de bir mobil uygulamaya ihtiyacı olduğu konusunda karar kıldık ve gerekli çalışmaların başlaması için talimat verdik. Çağdaş belediye hedeflerimize bir yenisini daha eklediğimiz bu projenin hayat bulması için harekete geçtik. Belediye olarak sizlerle mobil platform ortamında daha etkin iletişimde bulunacağımız 'Gölhisar Belediyesi Mobil Uygulaması' nı siz değerli vatandaşlarımızın hizmetine sunuyorum. Uygulamanın temelde amacı; ilçemize turistik amaçla gelen misafirlerimize Gölhisar'ımızın tarihi ve turistik yerlerini, kültürel yapısını ve yemek kültürünü tanıtmak, her yeni öğretim döneminde ilçemizde üniversite kazanıp memleketlerinden gelen öğrenci kardeşlerimizin Gölhisara daha çabuk alışmaları ve yerli değerlerimizle daha erken tanışmasını sağlamak ve siz değerli hemşehrilerimizin belediyecilik hizmetlerinden daha kolay faydalanmasını sağlamaktır. Gölhisar Belediye Başkanı olarak faaliyete geçirdiğimiz mobil belediyecilik uygulamamızı hizmetinize sunuyor ve Gölhisarımıza hayırlı olmasını temenni ediyorum. &#10; - Gölhisar Belediye Başkanı İbrahim SERTBAŞ"
+                FontSize="Body"
+                Padding="5,0,5,0"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

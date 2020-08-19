@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             NavigationPage.HasNavigationBar = "True"
+             mc:Ignorable="d"
+             x:Class="HighApp.Yayla_Ac">
+    <ScrollView>
+        <StackLayout>
+
+            <Image
+                Source="yayla.jpg"
+                Aspect="AspectFill"
+                HeightRequest="300"
+                WidthRequest="180"/>
+
+            <Image
+                Source="kaydir.gif"
+                IsAnimationPlaying="true"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                HeightRequest="20"
+                WidthRequest="20"/>
+
+            <Label
+                Text="Yaylalar"
+                FontAttributes="Bold"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center"
+                TextColor="#004570"
+                FontSize="Medium"
+                Padding="0,0,0,20"/>
+
+                <Label
+                Text="GÖLHİSAR YAYLALARI; &#10; Batı torosların en güzel yaylaları Gölhisar'da bir hat üzerinde sıralanmaktadır. Kozpınar, Armutlu, Böğrüdelik Yaylaları: çam, ardıç ve kavak ağaçlarıyla ilçemizi yeşile ve oksijene doyurur. Ulaşımı rahattır. Yazın bunaltıcı sıcaklarından kaçmak için yaylalara gelinir. Bir gölgelik bulup da altında uzanmak,  gürültülerden uzaklaşıp insanın doğayı ve kendisini dinlemesi için fırsattır. Önceleri festivaller ve şenlikler yapılırdı bu yaylalarda. 20 gün kadar yaylada kalınıp ay ışığında oyunlar oynanıp sohbetler edilirdi. Doğal su kaynakları vardır yaylalarımızda. Emeğinle güzelleşir her şey, tatil bile. Kamp çadırını kurmak kendi yaktığın ateşin közünde çay demlemek, ızgara üzerinde et pişirmek… Hep yapmak isteyip de yapamadığın şeyler vardır, sonra pişman olacağın şeyler. İşte bu da onlardan birisi. Hâlâ zamanınız varken yaylalarımız tüm doğa severlerin hizmetinde.."
+                FontSize="Body"
+                Padding="5,0,5,0"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

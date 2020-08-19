@@ -1,0 +1,848 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             NavigationPage.HasNavigationBar = "True"
+             BackgroundImageSource="turuncu_bg_page.jpg"
+             mc:Ignorable="d"
+             x:Class="HighApp.Gezgin">
+
+    <RelativeLayout>
+
+        <Frame x:Name="kibyra"
+               CornerRadius="15"
+            BorderColor="Silver"
+            HasShadow="True"
+            
+        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+            Property=Height,Factor=.0,Constant=20}"
+        RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,Property=Width,Factor=1,Constant=0}"
+        RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,Property=Height,Factor=.1,Constant=0}" >
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Kibyra_Ac"
+                NumberOfTapsRequired="1" />
+            </Frame.GestureRecognizers>
+
+        </Frame>
+
+
+        <Image
+            Source="sp_kibyra5.jpg"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kibyra,
+            Property=Y,
+            Factor=0,
+            Constant=22}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kibyra,
+            Property=X,
+            Factor=1,
+            Constant=15}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.15,
+            Constant=0}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.1,
+            Constant=-5}"  >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Kibyra_Ac"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+        <Image
+            Source="konum_animation.gif"
+            IsAnimationPlaying="true"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kibyra,
+            Property=Y,
+            Factor=0,
+            Constant=38}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kibyra,
+            Property=X,
+            Factor=1,
+            Constant=110}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Kibyra_Konum"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+
+
+        <Label Text="Keşfet"
+               FontSize="Default"
+               FontAttributes="Bold"       
+               MaxLines="2"
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kibyra,
+            Property=Y,
+            Factor=0,
+            Constant=50}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kibyra,
+            Property=X,
+            Factor=1
+            ,Constant=220}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=-30}"  >
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Kibyra_Ac"
+                NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+        </Label>
+
+
+
+
+        <Label Text="Kibyra Antik Kenti"
+               TextColor="#004570"
+               FontSize="Body"
+               FontAttributes="Bold"       
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kibyra,
+            Property=Y,
+            Factor=0,
+            Constant=20}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kibyra,
+            Property=X,
+            Factor=1
+            ,Constant=180}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.4,
+            Constant=-20}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=0}" >
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Kibyra_Ac"
+                NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+        </Label>
+
+
+        <Frame
+            x:Name="golhisar"
+            CornerRadius="15"
+            BorderColor="Silver"
+            HasShadow="True"
+            
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.0,
+            Constant=130}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=1,
+            Constant=0}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=0}">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Golhisar_Ac"
+                NumberOfTapsRequired="1" />
+            </Frame.GestureRecognizers>
+
+        </Frame>
+
+
+
+        <Image
+            Source="sp_golhisar1.jpg"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=golhisar,
+            Property=Y,
+            Factor=0,Constant=130}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=golhisar,
+            Property=X,
+            Factor=1,
+            Constant=15}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.15,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=0}" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Golhisar_Ac"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+
+
+
+
+      
+        <Image
+            Source="konum_animation.gif"
+            IsAnimationPlaying="true"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=golhisar,
+            Property=Y,
+            Factor=0,
+            Constant=148}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=golhisar,
+            Property=X,
+            Factor=1,
+            Constant=110}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Golhisar_Konum"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+
+
+        <Label Text="Keşfet"
+              FontSize="Default"
+               FontAttributes="Bold"       
+               MaxLines="2"
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=golhisar,
+            Property=Y,
+            Factor=0,
+            Constant=160}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=golhisar,
+            Property=X,
+            Factor=1
+            ,Constant=220}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.35,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=-30}" >
+
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Golhisar_Ac"
+                NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+        </Label>
+
+
+
+        <Label Text="Gölhisar"
+               TextColor="#004570"
+               FontSize="Body"
+               FontAttributes="Bold"       
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=golhisar,
+            Property=Y,
+            Factor=0,
+            Constant=130}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=golhisar,
+            Property=X,
+            Factor=1
+            ,Constant=220}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.3,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=-3}" >
+
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Golhisar_Ac"
+                NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+        </Label>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <Frame
+            x:Name="yaylalar"
+            CornerRadius="15"
+            BorderColor="Silver"
+            HasShadow="True"
+            
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.0,
+            Constant=230}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=1,
+            Constant=10}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=0}">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Yayla_Ac"
+                NumberOfTapsRequired="1" />
+            </Frame.GestureRecognizers>
+
+        </Frame>
+
+
+
+        <Image
+            Source="yayla.jpg"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=yaylalar,
+            Property=Y,
+            Factor=0,
+            Constant=230}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=yaylalar,
+            Property=X,
+            Factor=1,
+            Constant=15}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.15,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=0}" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Yayla_Ac"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+
+
+
+        <Image
+            Source="konum_animation.gif"
+            IsAnimationPlaying="true"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=yaylalar,
+            Property=Y,
+            Factor=0,
+            Constant=248}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=yaylalar,
+            Property=X,
+            Factor=1,
+            Constant=110}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Yaylalar_Konum"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+
+
+        <Label Text="Keşfet"
+                FontSize="Default"
+               FontAttributes="Bold"       
+               MaxLines="2"
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=yaylalar,
+            Property=Y,
+            Factor=0,
+            Constant=260}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=yaylalar,
+            Property=X,
+            Factor=1
+            ,Constant=220}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.35,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=-30}" >
+
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Yayla_Ac"
+                NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+        </Label>
+
+
+
+        <Label Text="Yaylalar"
+               TextColor="#004570"
+               FontSize="Body"
+               FontAttributes="Bold"       
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=yaylalar,
+            Property=Y,
+            Factor=0,
+            Constant=230}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=yaylalar,
+            Property=X,
+            Factor=1
+            ,Constant=220}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.3,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=-3}">
+
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Yayla_Ac"
+                NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+        </Label>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <Frame
+            x:Name="gol"
+            CornerRadius="15"
+            BorderColor="Silver"
+            HasShadow="True"
+            
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.0,
+            Constant=330}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=1,
+            Constant=0}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=0}">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Gol_Ac"
+                NumberOfTapsRequired="1" />
+            </Frame.GestureRecognizers>
+
+        </Frame>
+
+
+
+        <Image
+            Source="gol.jpg"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=gol,
+            Property=Y,
+            Factor=0,
+            Constant=330}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=gol,
+            Property=X,
+            Factor=1,
+            Constant=15}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.15,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=0}" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Gol_Ac"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+
+        <Image
+            Source="konum_animation.gif"
+            IsAnimationPlaying="true"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=gol,
+            Property=Y,
+            Factor=0,
+            Constant=348}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=gol,
+            Property=X,
+            Factor=1,
+            Constant=110}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Gol_Konum"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+        <Label Text="Keşfet"
+               FontSize="Default"
+               FontAttributes="Bold"       
+               MaxLines="2"
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=gol,
+            Property=Y,
+            Factor=0,
+            Constant=360}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=gol,
+            Property=X,
+            Factor=1
+            ,Constant=220}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.35,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=-30}" >
+
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Gol_Ac"
+                NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+        </Label>
+
+
+        <Label Text="Göller"
+               TextColor="#004570"
+               FontSize="Body"
+               FontAttributes="Bold"       
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=gol,
+            Property=Y,
+            Factor=0,
+            Constant=330}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=gol,
+            Property=X,
+            Factor=1
+            ,Constant=220}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.3,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=-3}">
+
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Gol_Ac"
+                NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+        </Label>
+
+
+    </RelativeLayout>
+
+</ContentPage>

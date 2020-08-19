@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             NavigationPage.HasNavigationBar = "True"
+             mc:Ignorable="d"
+             x:Class="HighApp.Kibyra_Ac">
+
+
+    <ScrollView>
+        <StackLayout>
+
+        <Image
+                Source="kibyra1.jpg"
+                Aspect="AspectFill"
+                HeightRequest="300"
+                WidthRequest="180"/>
+
+        <Image
+                Source="kaydir.gif"
+                IsAnimationPlaying="true"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                HeightRequest="20"
+                WidthRequest="20"/>
+
+            <Label
+                Text="Kibyra Antik Kenti"
+                FontFamily="{StaticResource NormalFont}"
+                TextColor="#004570"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center"
+                FontSize="Medium"
+                Padding="0,0,0,20"/>
+
+            <Label  Text=" Kibyra; &#10; Nadir, zarif ve ihtişamlı yapıyla, eski insandan kalan insanlıkla, tarihin dehlizleriyle tanışmak, yeniden keşfetmek ister misin? 2016 yılında UNESCO dünya mirası geçici listesine alınan Kibyra, tarihin sayılardan ibaret olmadığını; insanın, ölümsüzlüğü en çok, ardında hiç göremeyeceği yeni insana bıraktıklarında  bulduklarını gösterir. Bu topraklara, Hititler, Frigler, Lidyalılar, Romalılar, Hamitoğulları ve Osmanlı insanının  gözyaşı, sevinci, nefreti ve zekası sinmiştir. Vatanımızın yürek ve kara parçasında bulunan bu antik kent, dünya kültürüne insanlığın mirasıdır… M.Ö 300 yılında kurulduğu düşünülen Kibyra antik kenti, 30 bin asker, 2 bin atlı piyadesiyle 26 antik kentin can ve mal varlığından sorumlu güçlü bir uygarlıktı. 'Cesur yürekli insanların yaşadığı, hızlı atların yetiştirildiği Kibyra'ya hoşgeldiniz.'"
+                FontSize="Body"
+                Padding="5,0,5,0"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+            <Image
+                Source="sp_kibyra_genis_aci.jpg"
+                Aspect="AspectFill"
+                HeightRequest="300"
+                WidthRequest="180"/>
+
+            <Label  Text="Kibyra'ya girdiğinizde sizi ilk 200 metre pist uzunluğuyla görkemli stadyumu karşılar. 12 bin kişi kapasitelidir. Olimpiyat gibi spor faaliyetleri ve sonrasında gladyatör dövüşleri için kullanılırdı. Burdur müzesindeki kabartmaları da görmüşseniz, o beyaz tribünlerde oturduğunuzda gladyatörlerin korkularını, hırslarını ve kalkan kılıç seslerini yeniden canlandırabilirsiniz.."
+                FontSize="Body"
+                Padding="5,0,5,0"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+
+            <Image
+                Source="sp_kibyra_hiyoroglifler.jpg"
+                Aspect="AspectFill"
+                HeightRequest="300"
+                WidthRequest="180"/>
+
+            <Label  Text=" Stadyumdan yukarı doğru devam ettiğimizde 100 dönümlük bir Agora görürüz. Agora, çarşı pazar meydanıdır. Balıkçıların balıklarını taze tutmak için oluşturduğu küçük havuzu ve fırını gördüğünüzde kapalı çarşı kültürünü daha farklı deneyimleyeceksinizdir. Oradan yukarı devam ettiğimizde 8 bin kişilik 3 katlı devasa tiyatro karşılar. Antik çağlarda müzik evi olarak anılan Odeon ise, Aynı zamanda Meclis binasi ve bölge mahkemesi olarak da kullanılırdı. 3600 kişilik kapasiteye sahiptir olan dünyadaki en büyük Odeon örneği Kibyra'dadır. Yapının hemen ortasında 7 ayrı renkteki mermerden yapılan 3 boyutlu medusa mozaiği figürünün ise dünyada eşi benzeri yoktur. Dünyanın her yerinden insanlar, fotoğraf çekmekten çok bu güzelliğe kendi gözleriyle şahit olmak için gelmekte haklı…"
+                FontSize="Body"
+                Padding="5,0,5,0"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+
+            <Image
+                Source="sp_kibyra_medusa.jpg"
+                Aspect="AspectFill"
+                HeightRequest="300"
+                WidthRequest="180"/>
+
+            <Label  Text="Medusa ise, kısaca yunan mitolojisinde içinde kötü niyet barındıran insanları gözleriyle taşa çevirme özelliğine sahiptir. Aynı zamanda mahkeme olarak kullanıldığını söylemiştik değil mi? Bir suçlu olup bu devasa yapının içinde medusanın gözlerinin içine bakarak yalan söylemeyi deneyin. Estetik olduğu kadar zekice de bir hamle. Görüp de etkilenmeyenin de kalbi taşa dönebilir. Kibyra'nın bir güzel parçası da Eski Roma Hamamı; alttan mermerleri ısıtma sistemi üzerine kurulmuştur. Aynı zamanda tüm Kibyra'nın su kanalları ve alt yapısı, asırlar öncesinden insanın mimari kapasitesini  göstermiştir. Bu vatan içinde olmasından şans duyduğumuz,büyük depremlere, doğal şartlara ve yağmalara direnmiş olan bu tarihin gerçeğine siz de dokunun…"
+                FontSize="Body"
+                Padding="5,0,5,0"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+
+            <Image
+                Source="sp_kibyra5.jpg"
+                Aspect="AspectFill"
+                HeightRequest="300"
+                WidthRequest="180"/>
+
+
+            <Label  Text="Mis gibi bir dağ havası eşliğinde tarihi, insanlığı ve kendinizi yeniden keşfedin! Şapkanızı ve güneş gözlüğünüzü alın. Mutlaka rahat bir ayakkabı giyin ve suyunuzu da eksik etmeyin. Peki nasıl gelebilirim diyecek olursanız; &#10; Antalya üzerinden Çavdır-Denizli yol güzergahını takip ederek Gölhisar'a ulaşın. Buradan da Kibyra antik kentine rahatça ulaşabilirsiniz. Ankara tarafından ise Afyonkarahisar-Burdur karayolundan Gölhisar-Fethiye istikametini takip ederek Gölhisar'a ulaşmak mümkündür. İzmir - Aydın - Denizli güzergahından ise Acıpayam - Gölhisar hattını takip ederek Kibyra Antik Kenti'ne varabilirsiniz."
+                FontSize="Body"
+                Padding="5,0,5,0"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+
+            <Image
+                Source="sp_kibyra_odeon.jpg"
+                Aspect="AspectFill"
+                HeightRequest="300"
+                WidthRequest="180"/>
+
+        </StackLayout>
+
+    </ScrollView>
+
+</ContentPage>

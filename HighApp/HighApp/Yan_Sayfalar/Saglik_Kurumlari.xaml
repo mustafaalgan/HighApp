@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar = "True"
+             BackgroundImageSource="turuncu_bg_page.jpg"
+             x:Class="HighApp.Saglik_Kurumlari">
+
+
+    <RelativeLayout>
+
+
+        <Frame
+            x:Name="hastane"
+            CornerRadius="15"
+            BorderColor="Silver"
+            HasShadow="True"
+            
+        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+            Property=Height,Factor=.0,Constant=20}"
+        RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,Property=Width,Factor=1,Constant=0}"
+        RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,Property=Height,Factor=.1,Constant=10}">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Hastane"
+                NumberOfTapsRequired="1" />
+            </Frame.GestureRecognizers>
+        </Frame>
+
+
+        <Image
+             Source="sp_hastane2.jpg"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=hastane,
+            Property=Y,
+            Factor=0,
+            Constant=25}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=hastane,
+            Property=X,
+            Factor=1,
+            Constant=15}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.15,
+            Constant=0}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.1,
+            Constant=-5}">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Hastane"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+        <Image
+            Source="konum_animation.gif"
+            IsAnimationPlaying="true"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=hastane,
+            Property=Y,
+            Factor=0,
+            Constant=50}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=hastane,
+            Property=X,
+            Factor=1,
+            Constant=100}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Hastane_Konum"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+
+
+        <Label Text="Keşfet"
+               FontSize="Default"
+               FontAttributes="Bold"       
+               MaxLines="2"
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=hastane,
+            Property=Y,
+            Factor=0,
+            Constant=50}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=hastane,
+            Property=X,
+            Factor=1
+            ,Constant=220}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=-30}"  >
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Hastane"
+                NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+        </Label>
+
+
+
+
+        <Label Text="Hastane"
+               FontFamily="{StaticResource NormalFont}"
+               TextColor="#004570"
+               FontSize="Body"     
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=hastane,
+            Property=Y,
+            Factor=0,
+            Constant=20}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=hastane,
+            Property=X,
+            Factor=1,
+            Constant=170}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}">
+            <Label.GestureRecognizers>
+            <TapGestureRecognizer
+                Tapped="Hastane"
+                NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+        </Label>
+
+
+
+    </RelativeLayout>
+</ContentPage>

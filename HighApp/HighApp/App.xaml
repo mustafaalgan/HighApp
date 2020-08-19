@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HighApp.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="NormalFont">
+                <On Platform="Android" Value="LuckiestGuy.ttf#Luckiest Guy" />
+                <On Platform="iOS" Value="LuckiestGuy.ttf#Luckiest Guy" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="İtalicFont">
+                <On Platform="Android" Value="MarckScript-Regular.ttf#MarckScript-Regular" />
+                <On Platform="iOS" Value="MarckScript-Regular.ttf#MarckScript-Regular" />
+            </OnPlatform>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

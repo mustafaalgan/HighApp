@@ -1,0 +1,751 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             NavigationPage.HasNavigationBar = "True"
+             BackgroundImageSource="turuncu_bg_page.jpg"
+             mc:Ignorable="d"
+             x:Class="HighApp.Restoran">
+
+    <RelativeLayout>
+
+        <Frame x:Name="kosk_restaurant"
+               CornerRadius="15"
+            BorderColor="Silver"
+            HasShadow="True"
+            
+        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+            Property=Height,Factor=.0,Constant=20}"
+        RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,Property=Width,Factor=1,Constant=0}"
+        RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,Property=Height,Factor=.1,Constant=10}" />
+
+
+        <Image
+            Source="kosk_restaurant.jpg"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kosk_restaurant,
+            Property=Y,
+            Factor=0,
+            Constant=25}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kosk_restaurant,
+            Property=X,
+            Factor=1,
+            Constant=15}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.15,
+            Constant=0}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.1,
+            Constant=-5}" />
+
+
+
+        <Image
+            Source="phone.png"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kosk_restaurant,
+            Property=Y,
+            Factor=0,
+            Constant=50}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kosk_restaurant,
+            Property=X,
+            Factor=1,
+            Constant=190}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}"  >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Kosk_Restoran_Ara"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+        
+        <Image
+            Source="web_icon.png"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kosk_restaurant,
+            Property=Y,
+            Factor=0,
+            Constant=50}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kosk_restaurant,
+            Property=X,
+            Factor=1,
+            Constant=90}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Kosk_Restoran_Web"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+        
+        <Image
+            Source="konum_animation.gif"
+                IsAnimationPlaying="true"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kosk_restaurant,
+            Property=Y,
+            Factor=0,
+            Constant=50}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kosk_restaurant,
+            Property=X,
+            Factor=1,
+            Constant=140}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}"  >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Kosk_Restoran_Konum"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+
+
+        <Label Text="Fatih Mah. Adliye Sokağı Edem Pastanesi Arası"
+               FontSize="Default"
+               FontAttributes="Bold"       
+               MaxLines="2"
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kosk_restaurant,
+            Property=Y,
+            Factor=0,
+            Constant=50}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kosk_restaurant,
+            Property=X,
+            Factor=1,
+            Constant=230}"
+               
+              RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.4,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+
+
+        <Label Text="Köşk Restaurant"
+                    FontFamily="{StaticResource NormalFont}"
+                    TextColor="#004570"
+               FontSize="Body"   
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kosk_restaurant,
+            Property=Y,
+            Factor=0,
+            Constant=20}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kosk_restaurant,
+            Property=X,
+            Factor=1
+            ,Constant=170}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}"/>
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <Frame
+            x:Name="ikinci_bahar_restaurant"
+            CornerRadius="15"
+            BorderColor="Silver"
+            HasShadow="True"
+            
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.0,
+            Constant=130}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=1,
+            Constant=0}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=10}"/>
+
+
+
+        <Image
+            Source="ikincibahar.jpg"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ikinci_bahar_restaurant,
+            Property=Y,
+            Factor=0,Constant=132}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ikinci_bahar_restaurant,
+            Property=X,
+            Factor=1,
+            Constant=15}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.15,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=0}"/>
+
+
+
+
+
+
+
+        <Image
+            Source="phone.png"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ikinci_bahar_restaurant,
+            Property=Y,
+            Factor=0,
+            Constant=160}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ikinci_bahar_restaurant,
+            Property=X,
+            Factor=1,
+            Constant=190}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}"  >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="İkincibahar_Restoran_Ara"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+        <Image
+            Source="web_icon.png"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ikinci_bahar_restaurant,
+            Property=Y,
+            Factor=0,
+            Constant=160}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ikinci_bahar_restaurant,
+            Property=X,
+            Factor=1,
+            Constant=90}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="İkincibahar_Restoran_Web"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+        
+        <Image
+            Source="konum_animation.gif"
+                IsAnimationPlaying="true"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ikinci_bahar_restaurant,
+            Property=Y,
+            Factor=0,
+            Constant=160}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ikinci_bahar_restaurant,
+            Property=X,
+            Factor=1,
+            Constant=140}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}"  >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="İkincibahar_Restoran_Konum"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+
+
+        <Label Text="Pazar Mah. Hal Cad. Şehitler Parkı"
+              FontSize="Default"
+               FontAttributes="Bold"       
+               MaxLines="2"
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ikinci_bahar_restaurant,
+            Property=Y,
+            Factor=0,
+            Constant=160}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ikinci_bahar_restaurant,
+            Property=X,
+            Factor=1,
+           Constant=230}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.4,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+
+        <Label Text="İkinci Bahar Restaurant"
+               FontFamily="{StaticResource NormalFont}"
+               TextColor="#004570"
+               FontSize="Body"  
+               
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ikinci_bahar_restaurant,
+            Property=Y,
+            Factor=0,
+            Constant=130}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ikinci_bahar_restaurant,
+            Property=X,
+            Factor=1,
+            Constant=170}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <Frame
+            x:Name="kavurmaci_osman"
+            CornerRadius="15"
+            BorderColor="Silver"
+            HasShadow="True"
+            
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.0,
+            Constant=230}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=1,
+            Constant=0}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=10}"/>
+
+
+
+        <Image
+            Source="kavurmaciosman_logo.png"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kavurmaci_osman,
+            Property=Y,
+            Factor=0,
+            Constant=232}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kavurmaci_osman,
+            Property=X,
+            Factor=1,
+            Constant=15}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.15,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=0}"/>
+
+
+
+
+
+
+
+        <Image
+            Source="web_icon.png"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kavurmaci_osman,
+            Property=Y,
+            Factor=0,
+            Constant=260}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kavurmaci_osman,
+            Property=X,
+            Factor=1,
+            Constant=90}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}"  >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Kavurmaci_Osman_Web"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+        
+        
+
+        <Image
+            Source="konum_animation.gif"
+                IsAnimationPlaying="true"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kavurmaci_osman,
+            Property=Y,
+            Factor=0,
+            Constant=260}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kavurmaci_osman,
+            Property=X,
+            Factor=1,
+            Constant=140}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}"  >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Kavurmaci_Osman_Konum"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+
+
+
+        <Label Text="Pazar Mah. Hal Cad. No:14 (Osman Kaya Apt.)"
+                FontSize="Default"
+               FontAttributes="Bold"       
+               MaxLines="2"
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kavurmaci_osman,
+            Property=Y,
+            Factor=0,
+            Constant=260}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kavurmaci_osman,
+            Property=X,
+            Factor=1,
+            Constant=230}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.4,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+        <Label Text="Kavurmacı Osman"
+               FontFamily="{StaticResource NormalFont}"
+               TextColor="#004570"
+               FontSize="Body"  
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kavurmaci_osman,
+            Property=Y,
+            Factor=0,
+            Constant=230}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=kavurmaci_osman,
+            Property=X,
+            Factor=1,
+            Constant=170}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+    </RelativeLayout>
+
+</ContentPage>

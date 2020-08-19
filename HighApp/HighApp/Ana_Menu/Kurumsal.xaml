@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             NavigationPage.HasNavigationBar = "True"
+             BackgroundImageSource="turuncu_bg_page.jpg"
+             mc:Ignorable="d"
+             x:Class="HighApp.Kurumsal">
+    <ContentPage.Content>
+
+
+        <StackLayout
+                VerticalOptions="Start"
+                HorizontalOptions="Center">
+
+            <Image
+                    Margin="0,20,0,0"
+                    Aspect="AspectFit"
+                    Source="kurumsal.png"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    WidthRequest="120"
+                    HeightRequest="120"/>
+
+            <Label
+                    Text="Kurumsal"
+                    FontFamily="{StaticResource NormalFont}"
+                    TextColor="#F15559"
+                    FontSize="Body"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"/>
+            <Label
+                    Text="Başkan"
+                    FontFamily="{StaticResource NormalFont}"
+                    TextColor="#004570"
+                    FontSize="Body"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Margin="0,30,0,0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Baskan"/>
+                </Label.GestureRecognizers>
+            </Label>
+            <Label
+                    Text="E - Belediye"
+                    FontFamily="{StaticResource NormalFont}"
+                    TextColor="#004570"
+                    FontSize="Body"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Margin="0,30,0,0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="E_Belediye"/>
+                </Label.GestureRecognizers>
+            </Label>
+            
+            <Label
+                    Text="Kaymakamlık"
+                    FontFamily="{StaticResource NormalFont}"
+                    TextColor="#004570"
+                    FontSize="Body"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Margin="0,30,0,0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Kaymakamlik"/>
+                </Label.GestureRecognizers>
+            </Label>
+            <Label
+                    Text="Gölhisar Milli Eğitim Müdürlüğü"
+                    FontFamily="{StaticResource NormalFont}"
+                    TextColor="#004570"
+                    FontSize="Body"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Margin="0,30,0,0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="MEB"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

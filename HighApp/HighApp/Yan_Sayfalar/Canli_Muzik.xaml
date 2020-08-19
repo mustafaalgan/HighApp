@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             NavigationPage.HasNavigationBar = "True"
+             BackgroundImageSource="turuncu_bg_page.jpg"
+             mc:Ignorable="d"
+             x:Class="HighApp.Yan_Sayfalar.Canli_Muzik">
+
+
+
+    <RelativeLayout>
+
+        <Frame x:Name="ardic_x"
+               CornerRadius="15"
+            BorderColor="Silver"
+            HasShadow="True"
+            
+        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+            Property=Height,Factor=.0,Constant=20}"
+        RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,Property=Width,Factor=1,Constant=0}"
+        RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,Property=Height,Factor=.1,Constant=10}" />
+
+
+        <Image
+            Source="ardic_logo.jpg"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ardic_x,
+            Property=Y,
+            Factor=0,
+            Constant=25}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ardic_x,
+            Property=X,
+            Factor=1,
+            Constant=15}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.15,
+            Constant=0}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.1,
+            Constant=-5}" />
+
+
+
+        <Image
+            Source="web_icon.png"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ardic_x,
+            Property=Y,
+            Factor=0,
+            Constant=50}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ardic_x,
+            Property=X,
+            Factor=1,
+            Constant=100}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Ardic_Web"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Image
+            Source="konum_animation.gif"
+            IsAnimationPlaying="true"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ardic_x,
+            Property=Y,
+            Factor=0,
+            Constant=50}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ardic_x,
+            Property=X,
+            Factor=1,
+            Constant=150}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Ardic_Konum"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+
+        <Label Text="Pazar Mah. Cumhuriyet Cad. No:11/A/1 Kibyra AVM"
+               FontSize="Default"
+               FontAttributes="Bold"       
+               MaxLines="3"
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ardic_x,
+            Property=Y,
+            Factor=0,
+            Constant=50}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ardic_x,
+           Property=X,
+            Factor=1,
+            Constant=230}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.4,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}"/>
+
+
+
+
+        <Label Text="Ardıç Cafe"
+               FontFamily="{StaticResource NormalFont}"
+               TextColor="#004570"
+               FontSize="Body"         
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ardic_x,
+            Property=Y,
+            Factor=0,
+            Constant=20}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ardic_x,
+           Property=X,
+            Factor=1,
+            Constant=170}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+
+        <Frame
+            x:Name="bigbaba_x"
+            CornerRadius="15"
+            BorderColor="Silver"
+            HasShadow="True"
+            
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.0,
+            Constant=130}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=1,
+            Constant=0}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=10}"/>
+
+
+
+        <Image
+            Source="bigbaba_logo.jpg"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=bigbaba_x,
+            Property=Y,
+            Factor=0,Constant=135}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=bigbaba_x,
+            Property=X,
+            Factor=1,
+            Constant=15}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.15,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=0}"/>
+
+
+
+
+
+
+
+        <Image
+            Source="web_icon.png"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=bigbaba_x,
+            Property=Y,
+            Factor=0,
+            Constant=160}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=bigbaba_x,
+            Property=X,
+            Factor=1,
+            Constant=100}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="BigBaba_Web"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Image
+            Source="konum_animation.gif"
+            IsAnimationPlaying="true"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=bigbaba_x,
+            Property=Y,
+            Factor=0,
+            Constant=160}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=bigbaba_x,
+            Property=X,
+            Factor=1,
+            Constant=150}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="BigBaba_Konum"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+
+        <Label Text="Merkez Camii, Atatürk Cd. No:76, 15400"
+               FontSize="Default"
+               FontAttributes="Bold"       
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=bigbaba_x,
+            Property=Y,
+            Factor=0,
+            Constant=160}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=bigbaba_x,
+            Property=X,
+            Factor=1,
+            Constant=230}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.4,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+        <Label Text="bigbaba"
+               FontFamily="{StaticResource NormalFont}"
+               TextColor="#004570"
+               FontSize="Body"        
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=bigbaba_x,
+            Property=Y,
+            Factor=0,
+            Constant=130}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=bigbaba_x,
+            Property=X,
+            Factor=1,
+            Constant=170}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+    </RelativeLayout>
+</ContentPage>

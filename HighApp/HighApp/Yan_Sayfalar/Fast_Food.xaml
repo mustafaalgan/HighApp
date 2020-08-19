@@ -1,0 +1,1089 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             NavigationPage.HasNavigationBar = "True"
+             BackgroundImageSource="turuncu_bg_page.jpg"
+             mc:Ignorable="d"
+             x:Class="HighApp.Fast_Food">
+
+    <RelativeLayout>
+
+        <Frame
+            x:Name="vitamin_bar"
+            CornerRadius="15"
+            BorderColor="Silver"
+            HasShadow="True"
+            
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.0,
+            Constant=20}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=1,
+            Constant=0}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=10}" />
+
+
+        <Image
+            Source="vitaminbar_logo.jpg"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=vitamin_bar,
+            Property=Y,
+            Factor=0,
+            Constant=25}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=vitamin_bar,
+            Property=X,
+            Factor=1,
+            Constant=15}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.15,
+            Constant=0}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.1,
+            Constant=-5}" />
+
+
+
+        <Image
+            Source="phone.png"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=vitamin_bar,
+            Property=Y,
+            Factor=0,
+            Constant=50}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=vitamin_bar,
+            Property=X,
+            Factor=1,
+            Constant=100}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}" />
+
+
+        <Image
+            Source="konum_animation.gif"
+            IsAnimationPlaying="true"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=vitamin_bar,
+            Property=Y,
+            Factor=0,
+            Constant=50}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=vitamin_bar,
+            Property=X,
+            Factor=1,
+            Constant=150}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}"  >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Vitamin_Bar_Konum"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+
+
+        <Label Text="Pazar Mah. Cumhuriyet Cad. No : 77/B"
+               FontSize="Default"
+               FontAttributes="Bold"       
+               MaxLines="2"
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=vitamin_bar,
+            Property=Y,
+            Factor=0,
+            Constant=50}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=vitamin_bar,
+             Property=X,
+            Factor=1,
+            Constant=230}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.4,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+
+
+
+        <Label Text="Vitamin Bar"
+                    FontFamily="{StaticResource NormalFont}"
+                    TextColor="#004570"
+               FontSize="Body"
+               FontAttributes="Bold"       
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=vitamin_bar,
+            Property=Y,
+            Factor=0,
+            Constant=20}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=vitamin_bar,
+            Property=X,
+            Factor=1,
+            Constant=170}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+
+
+        <Frame
+            x:Name="yayla_tost"
+            CornerRadius="15"
+            BorderColor="Silver"
+            HasShadow="True"
+            
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.0,
+            Constant=130}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=1,
+            Constant=0}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=10}"/>
+
+
+
+        <Image
+            Source="yayla_logo.jpg"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=yayla_tost,
+            Property=Y,
+            Factor=0,
+            Constant=135}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=yayla_tost,
+            Property=X,
+            Factor=1,
+            Constant=15}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.15,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=0}"/>
+
+
+
+
+
+
+
+        <Image
+            Source="phone.png"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=yayla_tost,
+            Property=Y,
+            Factor=0,
+            Constant=160}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=yayla_tost,
+            Property=X,
+            Factor=1,
+            Constant=100}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Yayla_Ara"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Image
+            Source="konum_animation.gif"
+            IsAnimationPlaying="true"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=yayla_tost,
+            Property=Y,
+            Factor=0,
+            Constant=160}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=yayla_tost,
+            Property=X,
+            Factor=1,
+            Constant=150}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}"  >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Yayla_Konum"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+
+
+        <Label Text="Pazar Mah. Cumhuriyet Cad. No:73/B"
+              FontSize="Default"
+               FontAttributes="Bold"       
+               MaxLines="2"
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=yayla_tost,
+            Property=Y,
+            Factor=0,
+            Constant=160}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=yayla_tost,
+            Property=X,
+            Factor=1,
+            Constant=230}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.4,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+
+        <Label Text="Yayla Tost"
+                    FontFamily="{StaticResource NormalFont}"
+                    TextColor="#004570"
+               FontSize="Body"
+               FontAttributes="Bold"       
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=yayla_tost,
+            Property=Y,
+            Factor=0,
+            Constant=130}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=yayla_tost,
+           Property=X,
+            Factor=1,
+            Constant=170}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <Frame
+            x:Name="komagene"
+            CornerRadius="15"
+            BorderColor="Silver"
+            HasShadow="True"
+            
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.0,
+            Constant=230}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=1,
+            Constant=0}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=10}"/>
+
+
+
+        <Image
+            Source="komagene.png"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=komagene,
+            Property=Y,
+            Factor=0,
+            Constant=235}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=komagene,
+            Property=X,
+            Factor=1,
+            Constant=15}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.15,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=0}"/>
+
+
+
+
+
+
+
+        <Image
+            Source="phone.png"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=komagene,
+            Property=Y,
+            Factor=0,
+            Constant=260}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=komagene,
+            Property=X,
+            Factor=1,
+            Constant=100}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Komage_Ara"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Image
+            Source="konum_animation.gif"
+                IsAnimationPlaying="true"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=komagene,
+            Property=Y,
+            Factor=0,
+            Constant=260}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=komagene,
+            Property=X,
+            Factor=1,
+            Constant=150}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}"  >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Komagene_Konum"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+
+
+        <Label Text="Fatih Mah.Cumhuriyet Cad. No: 92/B"
+                FontSize="Default"
+               FontAttributes="Bold"       
+               MaxLines="2"
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=komagene,
+            Property=Y,
+            Factor=0,
+            Constant=260}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=komagene,
+            Property=X,
+            Factor=1,
+            Constant=230}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.4,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+        <Label Text="Komagene Çiğköfte"
+                    FontFamily="{StaticResource NormalFont}"
+                    TextColor="#004570"
+               FontSize="Body"
+               FontAttributes="Bold"       
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=komagene,
+            Property=Y,
+            Factor=0,
+            Constant=230}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=komagene,
+           Property=X,
+            Factor=1,
+            Constant=170}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <Frame
+            x:Name="evim_tost"
+            CornerRadius="15"
+            BorderColor="Silver"
+            HasShadow="True"
+            
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.0,
+            Constant=330}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=1,
+            Constant=0}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=10}"/>
+
+
+
+        <Image
+            Source="evim_logo.jpg"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=evim_tost,
+            Property=Y,
+            Factor=0,
+            Constant=335}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=evim_tost,
+            Property=X,
+            Factor=1,
+            Constant=15}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.15,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=0}"/>
+
+
+
+
+
+
+
+        <Image
+            Source="phone.png"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=evim_tost,
+            Property=Y,
+            Factor=0,
+            Constant=360}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=evim_tost,
+            Property=X,
+            Factor=1,
+            Constant=100}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Evim_Ara"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Image
+            Source="konum_animation.gif"
+                IsAnimationPlaying="true"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=evim_tost,
+            Property=Y,
+            Factor=0,
+            Constant=360}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=evim_tost,
+            Property=X,
+            Factor=1,
+            Constant=150}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}"  >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Evim_Konum"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+
+        <Label Text="Cumhuriyet Cad. Adliye Karşısı"
+               FontSize="Default"
+               FontAttributes="Bold"       
+               MaxLines="2"
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=evim_tost,
+            Property=Y,
+            Factor=0,
+            Constant=360}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=evim_tost,
+            Property=X,
+            Factor=1,
+            Constant=230}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.4,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+        <Label Text="Evim Tost"
+                    FontFamily="{StaticResource NormalFont}"
+                    TextColor="#004570"
+               FontSize="Body"
+               FontAttributes="Bold"       
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=evim_tost,
+            Property=Y,
+            Factor=0,
+            Constant=330}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=evim_tost,
+           Property=X,
+            Factor=1,
+            Constant=170}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <Frame
+            x:Name="hanimeli"
+            CornerRadius="15"
+            BorderColor="Silver"
+            HasShadow="True"
+            
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.0,
+            Constant=430}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=1,
+            Constant=0}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=10}"/>
+
+
+
+        <Image
+            Source="buruks_logo.jpg"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=hanimeli,
+            Property=Y,
+            Factor=0,
+            Constant=435}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=hanimeli,
+            Property=X,
+            Factor=1,
+            Constant=15}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.15,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=0}"/>
+
+
+
+
+
+
+
+        <Image
+            Source="phone.png"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=hanimeli,
+            Property=Y,
+            Factor=0,
+            Constant=460}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=hanimeli,
+            Property=X,
+            Factor=1,
+            Constant=100}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}" />
+
+        <Image
+            Source="konum_animation.gif"
+            IsAnimationPlaying="true"
+                RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=hanimeli,
+            Property=Y,
+            Factor=0,
+            Constant=460}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=hanimeli,
+            Property=X,
+            Factor=1,
+            Constant=150}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Hanimeli_Konum"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+
+        <Label Text="Pazar Mah. Cumhuriyet Cad. No:65 D:2A"
+            FontSize="Default"
+               FontAttributes="Bold"       
+               MaxLines="2"
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=hanimeli,
+            Property=Y,
+            Factor=0,
+            Constant=460}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=hanimeli,
+            Property=X,
+            Factor=1,
+            Constant=230}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.4,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+
+        <Label Text="Hanımeli (Buruk's)"
+                    FontFamily="{StaticResource NormalFont}"
+                    TextColor="#004570"
+               FontSize="Body"
+               FontAttributes="Bold"       
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=hanimeli,
+            Property=Y,
+            Factor=0,
+            Constant=430}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=hanimeli,
+           Property=X,
+            Factor=1,
+            Constant=170}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+    </RelativeLayout>
+
+</ContentPage>

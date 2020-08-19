@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             NavigationPage.HasNavigationBar = "True"
+             BackgroundImageSource="turuncu_bg_page.jpg"
+             mc:Ignorable="d"
+             x:Class="HighApp.Yan_Sayfalar.Surucu_Kursu">
+    
+    
+    
+            <RelativeLayout>
+
+                <Frame
+                    x:Name="seref_surucu"
+                    CornerRadius="15"
+                    BorderColor="Silver"
+                    HasShadow="True"
+                    
+                    RelativeLayout.YConstraint="{ConstraintExpression 
+                    Type=RelativeToParent,
+                    Property=Height,
+                    Factor=.0,
+                    Constant=20}"
+                    
+                    RelativeLayout.WidthConstraint="{ConstraintExpression
+                    Type=RelativeToParent,
+                    Property=Width,
+                    Factor=1,
+                    Constant=0}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression
+                    Type=RelativeToParent,
+                    Property=Height,
+                    Factor=.1,
+                    Constant=10}" />
+
+
+        <Image
+            Source="surucu_kursu.jpg"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=seref_surucu,
+            Property=Y,
+            Factor=0,
+            Constant=25}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=seref_surucu,
+            Property=X,
+            Factor=1,
+            Constant=15}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.15,
+            Constant=0}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.1,
+            Constant=-5}" />
+
+        <Image
+            Source="phone.png"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=seref_surucu,
+            Property=Y,
+            Factor=0,
+            Constant=50}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=seref_surucu,
+            Property=X,
+            Factor=1,
+            Constant=100}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.0,
+            Constant=30}" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Seref_Ara"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Image
+            Source="konum_animation.gif"
+            IsAnimationPlaying="true"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=seref_surucu,
+            Property=Y,
+            Factor=0,
+            Constant=50}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=seref_surucu,
+            Property=X,
+            Factor=1,
+            Constant=150}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+          RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Seref_Konum"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Label Text="Cumhuriyet Cad. Üçler İşhanı Kat:3"
+               FontSize="Default"
+               FontAttributes="Bold"       
+               MaxLines="2"
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=seref_surucu,
+            Property=Y,
+            Factor=0,
+            Constant=50}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=seref_surucu,
+            Property=X,
+            Factor=1,
+            Constant=230}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.4,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+
+
+        <Label Text="Şeref Sürücü Kursu"
+                    FontFamily="{StaticResource NormalFont}"
+                    TextColor="#004570"
+               FontSize="Body"  
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=seref_surucu,
+            Property=Y,
+            Factor=0,
+            Constant=20}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=seref_surucu,
+            Property=X,
+            Factor=1,
+            Constant=170}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+
+                <Frame
+            x:Name="ozcinar_surucu"
+            CornerRadius="15"
+            BorderColor="Silver"
+            HasShadow="True"
+            
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.0,
+            Constant=130}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=1,
+            Constant=0}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=10}"/>
+
+
+
+                <Image
+                    Source="surucu_kursu.jpg"
+                    RelativeLayout.YConstraint="{ConstraintExpression
+                    Type=RelativeToView,
+                    ElementName=ozcinar_surucu,
+                    Property=Y,
+                    Factor=0,
+                    Constant=130}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ozcinar_surucu,
+            Property=X,
+            Factor=1,
+            Constant=15}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.15,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=.1,
+            Constant=0}"/>
+
+
+
+
+
+
+
+        <Image
+            Source="phone.png"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ozcinar_surucu,
+            Property=Y,
+            Factor=0,
+            Constant=160}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ozcinar_surucu,
+            Property=X,
+            Factor=1,
+            Constant=100}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Oz_Cinar_Ara"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Image
+            Source="konum_animation.gif"
+            IsAnimationPlaying="true"
+            RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ozcinar_surucu,
+            Property=Y,
+            Factor=0,
+            Constant=160}"
+            
+            RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ozcinar_surucu,
+            Property=X,
+            Factor=1,
+            Constant=150}"
+            
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.0,
+            Constant=30}"
+            
+          RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent
+            ,Property=Height,
+            Factor=.0,
+            Constant=30}" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="Oz_Cinar_Konum"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+
+
+        <Label Text="Fatih Mah. Cumhuriyet Cad. Şahan İş Merkezi Kat:1"
+              FontSize="Default"
+               FontAttributes="Bold"       
+               MaxLines="2"
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ozcinar_surucu,
+            Property=Y,
+            Factor=0,
+            Constant=160}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ozcinar_surucu,
+            Property=X,
+            Factor=1,
+            Constant=230}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=.4,
+            Constant=0}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+
+        <Label
+            Text="Özçınar Sürücü Kursu"
+            FontFamily="{StaticResource NormalFont}"
+            TextColor="#004570"
+            FontSize="Body" 
+            
+                RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ozcinar_surucu,
+            Property=Y,
+            Factor=0,
+            Constant=130}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=ozcinar_surucu,
+            Property=X,
+            Factor=1,
+            Constant=170}"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width}"
+               
+               RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height}" />
+
+
+            </RelativeLayout>
+
+
+    </ContentPage>
